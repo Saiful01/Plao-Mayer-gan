@@ -8,7 +8,7 @@
     <!-- Mobile Specific Metas ================================================== -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-    <title>বিপিএল বস কন্টেস্ট - অংশ নিন পুরস্কার জিতুন।</title>
+    <title>মায়ের ভাষায় ঘুমপাড়ানি গান</title>
     <!-- Site Title -->
 
 
@@ -109,6 +109,9 @@
             position: relative;
             padding-bottom: 30px;
             margin-bottom: 50px;
+        }
+        .check{
+            margin-left: 20px
         }
 
 
@@ -253,12 +256,13 @@
 <body ng-app="myApp" ng-controller="myController">
 <div class="body-inner">
     <!-- Header start -->
-{{--  <header id="header" class="header header-classic">
+  <header id="header" class="header header-classic">
       <div class="container">
           <nav class="navbar navbar-expand-lg navbar-light">
               <!-- logo-->
-              <a class="navbar-brand" href="/theme/index.html">
-                  <img src="images/logos/logo-v2.png" alt="">
+              <a class="navbar-brand" href="/">
+
+                 <img src="/images/gum_logo.png" alt="">
               </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -267,25 +271,21 @@
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                   <ul class="navbar-nav ml-auto">
                       <li class="dropdown nav-item active">
-                          <a href="/theme/#" class="" data-toggle="dropdown">Home <i class="fa fa-angle-down"></i></a>
-                          <ul class="dropdown-menu" role="menu">
-                              <li><a href="/theme/index.html">Home One</a></li>
-                              <li><a href="/theme/index-2.html">Home Two</a></li>
-                          </ul>
+                          <a style="color:#EF3F23 " href="/">হোম </a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#apply">স্ট্যাটাস লিখুন</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="#status">স্ট্যাটাস পোস্ট </a>
                       </li>
 
-                      <li class="nav-item">
-                          <a href="/theme/contact.html">Contact</a>
-                      </li>
-                      <li class="header-ticket nav-item">
-                          <a class="ticket-btn btn" href="/theme/pricing.html"> Buy Ticket
-                          </a>
-                      </li>
+
                   </ul>
               </div>
           </nav>
       </div><!-- container end-->
-  </header>--}}
+  </header>
 <!--/ Header end -->
 
 

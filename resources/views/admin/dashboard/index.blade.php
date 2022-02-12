@@ -13,7 +13,7 @@
                             <div class="media">
                                 <div class="media-body overflow-hidden">
                                     <p class="text-truncate font-size-14 mb-2"><a href="/admin/drawing"> Number of
-                                            Picture Quiz Submission</a></p>
+                                            Status Received</a></p>
                                     <h4 class="mb-0">{{($mcq)}}</h4>
                                 </div>
                                 <div class="text-primary">

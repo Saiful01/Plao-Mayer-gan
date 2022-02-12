@@ -16,11 +16,11 @@ class CreateApplicantsTable extends Migration
         Schema::create('applicants', function (Blueprint $table) {
             $table->id();
             $table->string("name");
-            $table->string("guardian_phone");
-            $table->string("address")->nullable();
-            $table->string("class_group");
-            $table->string("drawing");
+            $table->string("phone");
+            $table->string("fb_link")->nullable();
+            $table->longText("status")->nullable();
             $table->boolean("is_short_listed")->default(false);
+            $table->boolean("is_active")->default(true);
             $table->timestamps();
         });
     }

@@ -68,14 +68,30 @@ class AdminController extends Controller
     {
 
 
-        $mcq=McqQuizSubmission::count();
-        $selfie=SelfieSubmission::count();
-        $question=McqQuiz::where('is_publish', true)->orderBy('created_at','DESC')->first();
+        $mcq = Applicants::count();
+        // $selfie=SelfieSubmission::count();
+        // $question=McqQuiz::where('is_publish', true)->orderBy('created_at','DESC')->first();
 
         return view('admin.dashboard.index')
-            ->with('mcq', $mcq)
-            ->with('selfie', $selfie)
-            ->with('question', $question);
+            ->with('mcq', $mcq);
+    }
+
+    public function applicantsShow()
+    {
+
+
+        $numbers = 25;
+        $query = Applicants::orderBy('created_at', 'DESC');
+
+        $data = $query->paginate($numbers);
+        $counter_start = 1;
+        if (isset($_GET['page'])) {
+            $counter_start = ($_GET['page'] - 1) * $numbers + 1;
+        }
+
+        return view('admin.status.index')
+            ->with('start_number', $counter_start)
+            ->with('data', $data);
     }
 
     public function applications()

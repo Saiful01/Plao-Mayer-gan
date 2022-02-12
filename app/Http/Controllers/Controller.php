@@ -5,13 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Applicants;
 use App\Models\McqQuiz;
 use App\Models\McqQuizSubmission;
-use App\Models\News;
-use App\Models\Photos;
 use App\Models\SelfieSubmission;
 use App\Models\SelfieVote;
-use App\Models\Video;
 use Carbon\Carbon;
-use Devfaysal\BangladeshGeocode\Models\District;
 use Devfaysal\BangladeshGeocode\Models\Upazila;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
@@ -41,22 +37,66 @@ class Controller extends BaseController
         /*if (Carbon::now() > "2021-12-16 23:59:59") {
             return Redirect::to("/campaign-over");
         }*/
-      //  return District::all();
+        //  return District::all();
+        $news = Applicants::where('is_active', true)->get();
 
 
         return view('common.home.index')
+            ->with('news', $news)
             ->with("thumbnail", "/images/facebook.jpg")
-            ->with("fb_title", "বিপিএল বস কন্টেস্ট")
-            ->with("fb_sub_title", "বিপিএল কন্টেস্টে অংশ নিন পুরস্কার জিতুন। ");
+            ->with("fb_title", "মায়ের ভাষায় ঘুমপাড়ানি গান ")
+            ->with("fb_sub_title", "মায়ের ভাষায় ঘুমপাড়ানি গানে আপনার অনুভূতি প্রকাশ করুন আর পুরস্কার জিতুন ");
 
 
-        $videos = Video::get();
-        $news = News::where('is_featured', 1)->get();
-        $photos = Photos::where('is_featured', 1)->get();
+        // $videos = Video::get();
+        return $news = Applicants::where('is_active', true)->get();
+        // $photos = Photos::where('is_featured', 1)->get();
         return view('common.home.index')
             ->with('videos', $videos)
             ->with('news', $news)
             ->with('photos', $photos);
+    }
+
+
+    public function applicantSubmit(Request $request)
+    {
+        //  return $request->all();
+
+
+        $validator = Validator::make($request->all(), [
+            'name' => 'required',
+            'phone' => 'required',
+        ]);
+
+        if ($validator->fails()) {
+            Session::flash('error', 'ফর্মের তথ্যগুলি ঠিকমত পূরণ করে সাবমিট করুন।');
+            return back();
+
+        }
+
+
+        $flink = getFbLink($request['fb_link']);
+
+         $data = [
+            'name' => $request['name'],
+            'phone' => $request['phone'],
+            'fb_link' => $flink,
+            'status' => $request['status'],
+
+        ];
+
+
+        try {
+            Applicants::create($data);
+            // return Applicants::all();
+            Session::flash('message', 'আপনার স্ট্যাটাস গ্রহণ করা হয়েছে।');
+            return back();
+        } catch (\Exception $exception) {
+            // return $exception->getMessage();
+
+            return back();
+        }
+
     }
 
     public function selfieContest()
@@ -137,8 +177,8 @@ class Controller extends BaseController
             $image->move($destinationPath, $image_name);
             $request['image'] = '/images/selfie/' . $image_name;
         }
-        $request['district']=getDistrictName($request['district']);
-        $request['upazila']=getUpzilaName($request['upazila']);
+        $request['district'] = getDistrictName($request['district']);
+        $request['upazila'] = getUpzilaName($request['upazila']);
 
         //return $request->all();
         $data = [
@@ -201,8 +241,8 @@ class Controller extends BaseController
             Session::flash('error', 'আপনার উত্তর আগেই গ্রহণ করা করা হয়েছে।');
             return back();
         }
-        $request['district']=getDistrictName($request['district']);
-        $request['upazila']=getUpzilaName($request['upazila']);
+        $request['district'] = getDistrictName($request['district']);
+        $request['upazila'] = getUpzilaName($request['upazila']);
         $question = McqQuiz::where('id', $request['question_id'])->first();
 
         $is_right = false;
@@ -231,6 +271,7 @@ class Controller extends BaseController
         }
 
     }
+
 
     public function over()
     {
@@ -339,6 +380,7 @@ class Controller extends BaseController
          return json_decode($data[0]->business_documents)[0];
          return view('common.home.test');*/
     }
+
     public function getUpzila($id)
     {
 

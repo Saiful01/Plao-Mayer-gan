@@ -28,6 +28,10 @@ Route::get('/login', [AuthController::class, 'login']);
 Route::any('/test', [AuthController::class, 'test']);
 
 Route::get('/', [Controller::class, 'home']);
+Route::post('/applicant/submit', [Controller::class, 'applicantSubmit']);
+
+
+
 Route::get('/selfie-contest', [Controller::class, 'selfieContest']);
 Route::any('/selfie-contest/submit', [Controller::class, 'selfieContestSubmit']);
 
@@ -35,6 +39,7 @@ Route::any('/vote', [Controller::class, 'selfieContestVote']);
 
 Route::get('/photo-contest', [Controller::class, 'photoContest']);
 Route::post('/photo-contest/submit', [Controller::class, 'photoContestSubmit']);
+
 Route::get('/campaign-over', [Controller::class, 'over']);
 
 
@@ -93,6 +98,9 @@ Route::group(['prefix' => "admin"], function () {
 
 Route::group(['prefix' => "admin", 'middleware' => ['admin']], function () {
     Route::get('/dashboard', [AdminController::class, 'dashboard']);
+    Route::get('/status/applicants', [AdminController::class, 'applicantsShow']);
+
+
 
     Route::get('/drawing', [AdminController::class, 'drawing']);
     Route::get('/drawing/status-update/{id}/{status}', [AdminController::class, 'drawingStatus']);

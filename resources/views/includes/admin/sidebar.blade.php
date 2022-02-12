@@ -16,9 +16,15 @@
                         <span>Dashboard</span>
                     </a>
                 </li>
-
-
                 <li>
+                    <a href="/admin/status/applicants" class=" waves-effect">
+                        <i class="ri-book-2-fill"></i>
+                        <span>Status Applicants</span>
+                    </a>
+                </li>
+
+
+       {{--         <li>
                     <a href="/admin/manage-photo" class=" waves-effect">
                         <i class="ri-book-2-fill"></i>
                         <span>Manage Photo</span>
@@ -37,7 +43,7 @@
                         <i class="ri-book-2-fill"></i>
                         <span>Photo Contest Submission</span>
                     </a>
-                </li>
+                </li>--}}
 
                 {{--  <li>
                       <a href="/admin/drawing" class=" waves-effect">

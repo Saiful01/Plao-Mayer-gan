@@ -60,6 +60,16 @@ function getYoutubeVideoLink($link)
 
     return $video;
 }
+function getFbLink($link)
+{
+    if (preg_match("~(?:t\.\d+/)?(\d+)~i", $link, $matches)) {
+        $link= $matches[1] ;
+    }else{
+        $link="";
+    }
+
+    return $link;
+}
 
 function getYoutubeVideoId($link)
 {
@@ -156,7 +166,6 @@ function getApplicationStatus()
 
 function getDateFormat($data){
 
-return "fff";
     return $date2 = Carbon::parse($data)->format('d F y');
 }
 
