@@ -236,6 +236,27 @@
             color: #fff;
             border-color: #ef3f23;
         }
+        @media (max-width:480px){
+            #mobile{
+                display: block;
+            }
+            #desktop{
+                display: none;
+            }
+
+        }
+        @media (min-width:680px){
+            #mobile{
+                display: none;
+            }
+            #desktop{
+                display: block;
+            }
+            #desktop{
+                margin-top: 150px;
+            }
+
+        }
     </style>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -255,34 +276,52 @@
 
 <body ng-app="myApp" ng-controller="myController">
 <div class="body-inner">
+
     <!-- Header start -->
   <header id="header" class="header header-classic">
       <div class="container">
+
           <nav class="navbar navbar-expand-lg navbar-light">
-              <!-- logo-->
-              <a class="navbar-brand" href="/">
+              <div class="row">
+                  <div class="col-md-2 col-12 ">
+                      <a class="navbar-brand" href="/">
 
-                 <img src="/images/gum_logo.png" alt="">
-              </a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"><i class="icon icon-menu"></i></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                  <ul class="navbar-nav ml-auto">
-                      <li class="dropdown nav-item active">
-                          <a style="color:#EF3F23 " href="/">হোম </a>
-                      </li>
-                      <li class="nav-item">
-                          <a href="#apply">স্ট্যাটাস লিখুন</a>
-                      </li>
-                      <li class="nav-item">
-                          <a href="#status">স্ট্যাটাস পোস্ট </a>
-                      </li>
+                          <img src="/images/aci_logo.png" alt="">
+                      </a>
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"><i class="icon icon-menu"></i></span>
+                      </button>
+                  </div>
+                  <div class="col-md-8 col-8">
+
+                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                          <ul class="navbar-nav ml-auto">
+                              <li class="dropdown nav-item active">
+                                  <a style="color:#EF3F23 " href="/">হোম </a>
+                              </li>
+                              <li class="nav-item">
+                                  <a href="#apply">অংশগ্রহণ করুন </a>
+                              </li>
+                              <li class="nav-item">
+                                  <a href="#status">গ্যালারি  </a>
+                              </li>
 
 
-                  </ul>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="col-md-2 pull-right" >
+                      <a target="_blank" href="https://www.prothomalo.com/">
+
+                          <img src="/images/palologoblack.png" width="250px" height="70px" alt="">
+                      </a>
+
+                  </div>
               </div>
+              <!-- logo-->
+
+
           </nav>
       </div><!-- container end-->
   </header>

@@ -70,6 +70,21 @@ function getFbLink($link)
 
     return $link;
 }
+function getKyeFbLink($link)
+{
+    if (preg_match_all("!\d+!", $link, $matches)) {
+        $link= $matches[0] ;
+
+        $lastKey = end($link);
+
+        // $lastKey = substr($matches, -1) ;
+    }else{
+        $lastKey="";
+    }
+    return $lastKey;
+
+
+}
 
 function getYoutubeVideoId($link)
 {

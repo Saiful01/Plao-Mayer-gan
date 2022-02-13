@@ -17,7 +17,7 @@ class CreateApplicantsTable extends Migration
             $table->id();
             $table->string("name");
             $table->string("phone");
-            $table->string("fb_link")->nullable();
+            $table->longText("fb_link")->nullable();
             $table->longText("status")->nullable();
             $table->boolean("is_short_listed")->default(false);
             $table->boolean("is_active")->default(true);

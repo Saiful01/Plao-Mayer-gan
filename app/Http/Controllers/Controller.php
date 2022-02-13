@@ -38,7 +38,7 @@ class Controller extends BaseController
             return Redirect::to("/campaign-over");
         }*/
         //  return District::all();
-        $news = Applicants::where('is_active', true)->get();
+        $news = Applicants::where('is_active', true)->orderby("created_at", "DESC")->get();
 
 
         return view('common.home.index')
@@ -60,7 +60,7 @@ class Controller extends BaseController
 
     public function applicantSubmit(Request $request)
     {
-        //  return $request->all();
+        // return $request->all();
 
 
         $validator = Validator::make($request->all(), [
@@ -74,10 +74,16 @@ class Controller extends BaseController
 
         }
 
+        if (str_contains($request['fb_link'], "iframe",)) {
 
-        $flink = getFbLink($request['fb_link']);
+             $flink = $request['fb_link'];
+        } else {
 
-         $data = [
+             $flink = getFbLink($request['fb_link']);
+        }
+
+
+        $data = [
             'name' => $request['name'],
             'phone' => $request['phone'],
             'fb_link' => $flink,
@@ -88,7 +94,7 @@ class Controller extends BaseController
 
         try {
             Applicants::create($data);
-            // return Applicants::all();
+            // return Applicants::orderBy('created_at', "DESC")->first();
             Session::flash('message', 'আপনার স্ট্যাটাস গ্রহণ করা হয়েছে।');
             return back();
         } catch (\Exception $exception) {
