@@ -205,7 +205,7 @@
                                                     </iframe>
                                                 @endif
                                             @else
-                                                <p style="height: 280px">{{ Str::limit($res->status, 410) }}</p>
+                                                <p style="height: 370px">{{ Str::limit($res->status, 410) }}</p>
                                             @endif
                                         </div>
                                         <div class="post-body">
