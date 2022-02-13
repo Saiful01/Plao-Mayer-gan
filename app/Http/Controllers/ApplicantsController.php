@@ -113,5 +113,18 @@ class ApplicantsController extends Controller
         Auth::guard('applicant')->logout();
         return Redirect::to("/applicant/login");
     }
+    public function destroy($id)
+    {
+
+        try {
+            Applicants::where('id', $id)->delete();
+            return back()->with("success", "Successfully Deleted");
+        }catch (\Exception $exception){
+
+            return back()->with("failed", $exception->getMessage());
+
+        }
+
+    }
 
 }

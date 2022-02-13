@@ -142,7 +142,7 @@
                                 <div class="col-lg-4 fadeInUp mt-5">
                                     <div
                                         class="card p-2" {{--style="border: 1px solid; border-color: #9f9f9f"--}}>
-                                        <div class="post-media post-image">
+                                        <div class="post-media post-image" >
                                             @if($res->fb_link != null)
                                                 <iframe
                                                     src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fvoabangla%2Fposts%2F{{$res->fb_link}}&show_text=true&width=500"
@@ -153,10 +153,10 @@
 
                                                 </iframe>
                                             @else
-                                                <p>{{ Str::limit($res->status, 430) }}</p>
+                                                <p style="height: 280px">{{ Str::limit($res->status, 410) }}</p>
                                             @endif
                                         </div>
-                                        <div class="post-body">
+                                        <div class="post-body" >
                                             <div class="post-meta">
                                                                   <span class="post-author">
                                                    <i class="icon icon-user"></i>

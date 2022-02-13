@@ -74,7 +74,7 @@
                                     @if($res->fb_link != null)
                                         <iframe
                                             src="https://www.facebook.com/plugins/post.php?href=https://www.facebook.com/DainikJugantor/posts/{{$res->fb_link}}&show_text=true&width=500"
-                                            width="100%" height="500" style="border:none;overflow:hidden"
+                                            width="100%" height="200px" style="border:none;overflow:hidden"
                                             scrolling="no" frameborder="0" allowfullscreen="true"
                                             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
 
@@ -84,6 +84,7 @@
                                     @endif
 
                                 </td>
+                                <td><a href="/admin/status/delete/{{$res->id}}"><i class="fa fa-trash"></i> </a></td>
 
 
                             </tr>

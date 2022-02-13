@@ -155,6 +155,12 @@ Route::group(['prefix' => "admin", 'middleware' => ['admin']], function () {
 
     Route::get('/selfie/status-update/{id}/{status}', [SelfieSubmissionController::class, 'statusUpdate']);
 
+
+
+    Route::get('/status/delete/{id}', [ApplicantsController::class, 'destroy']);
+
+
+
     Route::get('/logout', [AdminController::class, 'logout']);
 });
 
