@@ -11,13 +11,13 @@
 
                     <div class="intro-left-content" id="mobile">
 
-                        <h3>মাযের ভাষায় ঘুম পাড়ানির গান
+                        <h3>মায়ের ভাষায় ঘুম পাড়ানির গান
                         </h3>
 
                     </div>
                     <div class="intro-left-content" id="desktop">
 
-                        <h1>মাযের ভাষায় ঘুম পাড়ানির গান</h1>
+                        <h1>মায়ের ভাষায় ঘুম পাড়ানির গান</h1>
 
                     </div>
                 </div><!-- col end-->
@@ -56,7 +56,7 @@
                                 ফর্মে নাম ও ফোন নম্বরসহ জমা দিতে হবে।</p>
                             <p><span class="text-danger">*</span> আপনি যখন ছোট ছিলেন, আপনাকে যে গান বা ছড়া শুনিয়ে ঘুম
                                 পাড়ানো হতো, সেই স্মৃতিও লিখে
-                                <span class="text-info">#GhumParaniGaan</span> ও হ্যাশট্যাগগুলো দিয়ে নাম ও ফোন নম্বরসহ
+                                <span class="text-info">#GhumParaniGaan</span> ও <span class="text-info">#ACIPure_Suji</span> হ্যাশট্যাগগুলো দিয়ে নাম ও ফোন নম্বরসহ
                                 জমা দিতে হবে।</p>
                             <p><span class="text-danger">*</span> অংশগ্রহণকারীদের মধ্য থেকে লটারির মাধ্যমে নির্বাচিত ১০
                                 জন বিজয়ীর জন্য থাকবে আকর্ষণীয়

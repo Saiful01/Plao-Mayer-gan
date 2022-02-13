@@ -12,7 +12,6 @@
     <!-- Site Title -->
 
 
-
     <!-- CSS
           ================================================== -->
     <!-- Bootstrap -->
@@ -66,6 +65,11 @@
     {{--    <link rel="stylesheet" href="/theme/css/custom.css">--}}
 
     <style>
+
+        .header.h-transparent2 {
+            padding: 0px 0;
+        }
+
         .ts-intro-item .single-intro-text {
             min-height: 325px;
         }
@@ -110,7 +114,8 @@
             padding-bottom: 30px;
             margin-bottom: 50px;
         }
-        .check{
+
+        .check {
             margin-left: 20px
         }
 
@@ -231,28 +236,38 @@
 
         }
 
+        .header.h-transparent2 .navbar.navbar-light ul.navbar-nav > li > a {
+            color: black !important;
+
+        }
+
         .header .navbar-light .navbar-toggler {
             background: #ef3f23;
             color: #fff;
             border-color: #ef3f23;
         }
-        @media (max-width:480px){
-            #mobile{
+
+        @media (max-width: 480px) {
+            #mobile {
                 display: block;
             }
-            #desktop{
+
+            #desktop {
                 display: none;
             }
 
         }
-        @media (min-width:680px){
-            #mobile{
+
+        @media (min-width: 680px) {
+            #mobile {
                 display: none;
             }
-            #desktop{
+
+            #desktop {
                 display: block;
             }
-            #desktop{
+
+            #desktop {
                 margin-top: 150px;
             }
 
@@ -277,55 +292,99 @@
 <body ng-app="myApp" ng-controller="myController">
 <div class="body-inner">
 
-    <!-- Header start -->
-  <header id="header" class="header header-classic">
-      <div class="container">
+    <header id="header" class="header header {{--header-transparent--}} h-transparent2">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-2 col-6">
+                    <!-- logo-->
+                    <a class="navbar-brand logo" href="/">
+                        <img src="/images/aci_logo.png" alt="">
+                    </a>
+                </div><!-- end col -->
 
-          <nav class="navbar navbar-expand-lg navbar-light">
-              <div class="row">
-                  <div class="col-md-2 col-12 ">
-                      <a class="navbar-brand" href="/">
+                <div class="col-lg-8">
+                    <nav class="navbar navbar-expand-lg navbar-light text-center justify-content-end">
 
-                          <img src="/images/aci_logo.png" alt="">
-                      </a>
-                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"><i class="icon icon-menu"></i></span>
-                      </button>
-                  </div>
-                  <div class="col-md-8 col-8">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"><i class="icon icon-menu"></i></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="dropdown nav-item active">
+                                    <a style="color:#EF3F23 " href="/">হোম </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#apply">অংশগ্রহণ করুন </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#status">গ্যালারি </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <!-- end col -->
+                <div class="col-lg-2 d-none d-lg-block text-right">
+                    <a target="_blank" href="https://www.prothomalo.com/"> <img src="/images/p_alo.png" alt=""></a>
+                </div>
+                <!-- end col -->
+            </div>
 
-                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                          <ul class="navbar-nav ml-auto">
-                              <li class="dropdown nav-item active">
-                                  <a style="color:#EF3F23 " href="/">হোম </a>
-                              </li>
-                              <li class="nav-item">
-                                  <a href="#apply">অংশগ্রহণ করুন </a>
-                              </li>
-                              <li class="nav-item">
-                                  <a href="#status">গ্যালারি  </a>
-                              </li>
+        </div><!-- container end-->
+    </header>
+
+    {{--  <!-- Header start -->
+    <header id="header" class="header header-classic">
+        <div class="container">
+
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="row">
+                    <div class="col-md-2 col-4 ">
+                        <a class="navbar-brand" href="/">
+
+                            <img src="/images/aci_logo.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="col-md-8 col-8">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"><i class="icon icon-menu"></i></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="dropdown nav-item active">
+                                    <a style="color:#EF3F23 " href="/">হোম </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#apply">অংশগ্রহণ করুন </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#status">গ্যালারি  </a>
+                                </li>
 
 
-                          </ul>
-                      </div>
-                  </div>
-                  <div class="col-md-2 pull-right" >
-                      <a target="_blank" href="https://www.prothomalo.com/">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 pull-right" >
+                        <a target="_blank" href="https://www.prothomalo.com/">
 
-                          <img src="/images/palologoblack.png" width="250px" height="70px" alt="">
-                      </a>
+                            <img src="/images/palologoblack.png"  alt="">
+                        </a>
 
-                  </div>
-              </div>
-              <!-- logo-->
+                    </div>
+                </div>
+                <!-- logo-->
 
 
-          </nav>
-      </div><!-- container end-->
-  </header>
-<!--/ Header end -->
+            </nav>
+        </div><!-- container end-->
+    </header>
+  <!--/ Header end -->--}}
 
 
     @yield('content')
