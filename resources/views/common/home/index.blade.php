@@ -151,12 +151,13 @@
             <div class="row">
                 <div class="col-md-3">
                     <center>
-                        <img src="/images/desktop.jpg" alt="banner">
+                        {{--<img src="/images/desktop.jpg" alt="banner">--}}
                     </center>
                 </div>
                 <div class="col-md-9">
                     <center>
-                        <img src="/images/desktop.jpg" alt="banner">
+
+                       {{-- <img src="/images/desktop.jpg" alt="banner">--}}
                     </center>
                 </div>
             </div>
@@ -166,7 +167,7 @@
     <section class="mobile">
         <div class="container">
             <center>
-                <img src="/images/mobile.jpg" alt="banner">
+               {{-- <img src="/images/mobile.jpg" alt="banner">--}}
             </center>
         </div>
     </section>
