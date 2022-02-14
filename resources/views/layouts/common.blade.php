@@ -172,12 +172,18 @@
         .desktop {
             display: block;
         }
+        .desktop h1 {
+           margin-top: 180px;
+        }
 
         @media (max-width: 767px) {
             .header .navbar-light .navbar-toggler {
                 background: #ef3f23;
                 color: #fff;
                 border-color: #ef3f23;
+            }
+            .navbar-brand img {
+                margin-top: 10px;
             }
 
             .section-title, .column-title {
@@ -247,30 +253,11 @@
             border-color: #ef3f23;
         }
 
-        @media (max-width: 480px) {
-            #mobile {
-                display: block;
-            }
-
-            #desktop {
-                display: none;
-            }
-
+        .panel ul li {
+            color: black;
         }
-
-        @media (min-width: 680px) {
-            #mobile {
-                display: none;
-            }
-
-            #desktop {
-                display: block;
-            }
-
-            #desktop {
-                margin-top: 150px;
-            }
-
+       .line {
+         font-weight: bold;
         }
     </style>
 
@@ -327,7 +314,7 @@
                 </div>
                 <!-- end col -->
                 <div class="col-lg-2 d-none d-lg-block text-right">
-                    <a target="_blank" href="https://www.prothomalo.com/"> <img src="/images/p_alo.png" alt=""></a>
+                    <a target="_blank" href="https://www.prothomalo.com/"> <img src="/images/p_alo.png" width="200px" alt=""></a>
                 </div>
                 <!-- end col -->
             </div>
