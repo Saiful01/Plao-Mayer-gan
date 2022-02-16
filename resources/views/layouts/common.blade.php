@@ -225,6 +225,9 @@
                 height: 45px !important;
                 margin-left: -10px;
             }
+            .intro-left-content {
+                 margin-bottom: 0px;
+            }
         }
 
         form {

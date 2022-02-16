@@ -1,32 +1,32 @@
 @extends('layouts.common')
 
 @section('content')
+    <style>
+        .panel-group p{
+            color: black;
+        }
+        .list-style{
+            list-style-type: square;
+        }
+        .ts-intro-item {
+            padding: 0px 0 0px;
+        }
+    </style>
 
     <!-- ts intro start -->
 
-    <section class="ts-intro-item " style="background-color: #e5e9e6">
+    <section class="ts-intro-item " style="background-color: #A2D9ED; background-image: linear-gradient(to right, #A2D9ED , #F6F6F6);">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="300ms">
-
-                    <div class="intro-left-content mobile" >
-                        <center>
-                            <h3>মায়ের ভাষায় ঘুম পাড়ানির গান
-                            </h3>
-                        </center>
-
-
-
-                    </div>
-                    <div class="intro-left-content desktop" >
-
-                        <h1>মায়ের ভাষায় ঘুম পাড়ানির গান</h1>
+                <div class="desktop col-lg-12 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="300ms">
+                    <div class="intro-left-content">
+                        <img src="/images/hero_image_desktop.jpg" style=" width: 100%"/>
 
                     </div>
                 </div><!-- col end-->
-                <div class="col-lg-6 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="300ms">
+                <div class=" mobile col-lg-12 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="300ms">
                     <div class="intro-left-content">
-                        <img src="/images/gum/original_large.png" style=" width: 100%"/>
+                        <img src="/images/hero_image_mobile.jpg" style=" width: 100%"/>
 
                     </div>
                 </div><!-- col end-->
@@ -51,7 +51,7 @@
                         <p>অংশগ্রহণের নিয়মাবলী—</p>
 
                         <div class="panel faq-list panel-default">
-                            <ul>
+                            <ul class="list-style">
                                 <li class="line" ><span class="text-danger">*</span> আপনার সন্তানকে আপনি যে বাংলা গান বা ছড়া শুনিয়ে ঘুম
                                     পাড়ান, সেই মুহূর্তের ভিডিও পাঠান।
                                     ভিডিও আপনার ফেসবুক প্রোফাইলে পাবলিক করে <span class="text-info">#GhumParaniGaan</span> ও
@@ -356,7 +356,7 @@
                                                                 {!! $res->status !!}
                                                             </div>
                                                             <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary"
+                                                                <button type="button" class="btn-sm btn-secondary"
                                                                         data-dismiss="modal">Close
                                                                 </button>
 
