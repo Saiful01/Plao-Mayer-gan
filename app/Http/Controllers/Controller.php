@@ -43,7 +43,7 @@ class Controller extends BaseController
 
         return view('common.home.index')
             ->with('news', $news)
-            ->with("thumbnail", "/images/facebook.jpg")
+            ->with("thumbnail", "/images/facebook_image.jpg")
             ->with("fb_title", "মায়ের ভাষায় ঘুমপাড়ানি গান ")
             ->with("fb_sub_title", "মায়ের ভাষায় ঘুমপাড়ানি গানে আপনার অনুভূতি প্রকাশ করুন আর পুরস্কার জিতুন ");
 

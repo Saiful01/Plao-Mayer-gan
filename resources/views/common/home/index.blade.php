@@ -11,6 +11,11 @@
         .ts-intro-item {
             padding: 0px 0 0px;
         }
+        .ts-contact{
+            padding: 5px!important;
+
+
+        }
     </style>
 
     <!-- ts intro start -->
@@ -52,23 +57,23 @@
 
                         <div class="panel faq-list panel-default">
                             <ul class="list-style">
-                                <li class="line" ><span class="text-danger">*</span> আপনার সন্তানকে আপনি যে বাংলা গান বা ছড়া শুনিয়ে ঘুম
+                                <li class="line" > আপনার সন্তানকে আপনি যে বাংলা গান বা ছড়া শুনিয়ে ঘুম
                                     পাড়ান, সেই মুহূর্তের ভিডিও পাঠান।
                                     ভিডিও আপনার ফেসবুক প্রোফাইলে পাবলিক করে <span class="text-info">#GhumParaniGaan</span> ও
                                     <span class="text-info">#ACIPure_Suji</span>
                                     হ্যাশট্যাগগুলো দিয়ে পাবলিশ করুন। ভিডিও পাবলিশের পর ভিডিও পোস্টের লিংকটি নিবন্ধন
                                     ফর্মে নাম ও ফোন নম্বরসহ জমা দিতে হবে।</li>
-                                <li class="line" ><span class="text-danger">*</span> আপনি যখন ছোট ছিলেন, আপনাকে যে গান বা ছড়া শুনিয়ে ঘুম
+                                <li class="line" > আপনি যখন ছোট ছিলেন, আপনাকে যে গান বা ছড়া শুনিয়ে ঘুম
                                     পাড়ানো হতো, সেই স্মৃতিও লিখে
                                     <span class="text-info">#GhumParaniGaan</span> ও <span class="text-info">#ACIPure_Suji</span> হ্যাশট্যাগগুলো দিয়ে নাম ও ফোন নম্বরসহ
                                     জমা দিতে হবে।</li>
-                                <li><span class="text-danger">*</span> অংশগ্রহণকারীদের মধ্য থেকে লটারির মাধ্যমে নির্বাচিত ১০
+                                <li> অংশগ্রহণকারীদের মধ্য থেকে লটারির মাধ্যমে নির্বাচিত ১০
                                     জন বিজয়ীর জন্য থাকবে আকর্ষণীয়
                                     উপহার।</li>
-                                <li><span class="text-danger">*</span> লেখা ও ভিডিও পাঠানোর শেষ সময় ২২ ফেব্রুয়ারি ২০২২।</li>
-                                <li><span class="text-danger">*</span> অংশগ্রহণকারীদের সংগৃহীত তথ্য প্রথম আলো ও এসিআই
+                                <li> লেখা ও ভিডিও পাঠানোর শেষ সময় ২২ ফেব্রুয়ারি ২০২২।</li>
+                                <li> অংশগ্রহণকারীদের সংগৃহীত তথ্য প্রথম আলো ও এসিআই
                                     যোগাযোগের জন্য ব্যবহার করতে পারবে।</li>
-                                <li><span class="text-danger">*</span> এই আয়োজনসংক্রান্ত নিয়মাবলি প্রথম আলো সংরক্ষণ করে। সব
+                                <li> এই আয়োজনসংক্রান্ত নিয়মাবলি প্রথম আলো সংরক্ষণ করে। সব
                                     ক্ষেত্রে প্রথম আলোর সিদ্ধান্তই
                                     চূড়ান্ত।</li>
                             </ul>
@@ -128,7 +133,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control form-control-phone" placeholder="ফেইসবুক লিংক"
+                                    <input class="form-control form-control-phone" placeholder="ফেসবুক ভিডিও লিংক"
                                            name="fb_link" id="fb_link_input" type="text">
                                 </div>
                                 <div class="form-group">
@@ -202,7 +207,7 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control form-control-phone" placeholder="ফেইসবুক লিংক"
+                                    <input class="form-control form-control-phone" placeholder="ফেসবুক ভিডিও লিংক"
                                            name="fb_link" id="fb_link_input" type="text">
                                 </div>
                                 <div class="form-group">
@@ -232,23 +237,23 @@
 
                         <div class="panel faq-list panel-default">
                             <ul>
-                                <li class="line" ><span class="text-danger">*</span> আপনার সন্তানকে আপনি যে বাংলা গান বা ছড়া শুনিয়ে ঘুম
+                                <li class="line" > আপনার সন্তানকে আপনি যে বাংলা গান বা ছড়া শুনিয়ে ঘুম
                                     পাড়ান, সেই মুহূর্তের ভিডিও পাঠান।
                                     ভিডিও আপনার ফেসবুক প্রোফাইলে পাবলিক করে <span class="text-info">#GhumParaniGaan</span> ও
                                     <span class="text-info">#ACIPure_Suji</span>
                                     হ্যাশট্যাগগুলো দিয়ে পাবলিশ করুন। ভিডিও পাবলিশের পর ভিডিও পোস্টের লিংকটি নিবন্ধন
                                     ফর্মে নাম ও ফোন নম্বরসহ জমা দিতে হবে।</li>
-                                <li class="line" ><span class="text-danger">*</span> আপনি যখন ছোট ছিলেন, আপনাকে যে গান বা ছড়া শুনিয়ে ঘুম
+                                <li class="line" > আপনি যখন ছোট ছিলেন, আপনাকে যে গান বা ছড়া শুনিয়ে ঘুম
                                     পাড়ানো হতো, সেই স্মৃতিও লিখে
                                     <span class="text-info">#GhumParaniGaan</span> ও <span class="text-info">#ACIPure_Suji</span> হ্যাশট্যাগগুলো দিয়ে নাম ও ফোন নম্বরসহ
                                     জমা দিতে হবে।</li>
-                                <li><span class="text-danger">*</span> অংশগ্রহণকারীদের মধ্য থেকে লটারির মাধ্যমে নির্বাচিত ১০
+                                <li> অংশগ্রহণকারীদের মধ্য থেকে লটারির মাধ্যমে নির্বাচিত ১০
                                     জন বিজয়ীর জন্য থাকবে আকর্ষণীয়
                                     উপহার।</li>
-                                <li><span class="text-danger">*</span> লেখা ও ভিডিও পাঠানোর শেষ সময় ২২ ফেব্রুয়ারি ২০২২।</li>
-                                <li><span class="text-danger">*</span> অংশগ্রহণকারীদের সংগৃহীত তথ্য প্রথম আলো ও এসিআই
+                                <li> লেখা ও ভিডিও পাঠানোর শেষ সময় ২২ ফেব্রুয়ারি ২০২২।</li>
+                                <li> অংশগ্রহণকারীদের সংগৃহীত তথ্য প্রথম আলো ও এসিআই
                                     যোগাযোগের জন্য ব্যবহার করতে পারবে।</li>
-                                <li><span class="text-danger">*</span> এই আয়োজনসংক্রান্ত নিয়মাবলি প্রথম আলো সংরক্ষণ করে। সব
+                                <li> এই আয়োজনসংক্রান্ত নিয়মাবলি প্রথম আলো সংরক্ষণ করে। সব
                                     ক্ষেত্রে প্রথম আলোর সিদ্ধান্তই
                                     চূড়ান্ত।</li>
                             </ul>
@@ -266,18 +271,18 @@
 
     </section>
 
-    <section class="desktop">
+    {{--<section class="desktop">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
                     <center>
-                        {{--<img src="/images/desktop.jpg" alt="banner">--}}
+                        --}}{{--<img src="/images/desktop.jpg" alt="banner">--}}{{--
                     </center>
                 </div>
                 <div class="col-md-9">
                     <center>
 
-                       {{-- <img src="/images/desktop.jpg" alt="banner">--}}
+                       --}}{{-- <img src="/images/desktop.jpg" alt="banner">--}}{{--
                     </center>
                 </div>
             </div>
@@ -287,12 +292,12 @@
     <section class="mobile">
         <div class="container">
             <center>
-               {{-- <img src="/images/mobile.jpg" alt="banner">--}}
+               --}}{{-- <img src="/images/mobile.jpg" alt="banner">--}}{{--
             </center>
         </div>
-    </section>
+    </section>--}}
 
-    <section class="ts-contact-form" id="status">
+    <section class="ts-contact" >
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
