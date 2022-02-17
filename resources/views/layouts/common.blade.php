@@ -265,17 +265,13 @@
     </style>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MDSGJVCQP2"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H8SS16FXWF"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
+        function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'G-MDSGJVCQP2');
+        gtag('config', 'G-H8SS16FXWF');
     </script>
 </head>
 

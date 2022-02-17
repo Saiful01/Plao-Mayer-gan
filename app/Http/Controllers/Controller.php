@@ -38,7 +38,7 @@ class Controller extends BaseController
             return Redirect::to("/campaign-over");
         }*/
         //  return District::all();
-        $news = Applicants::where('is_active', true)->orderby("created_at", "DESC")->get();
+        $news = Applicants::where('is_active', true)->orderby("created_at", "DESC")->paginate(10);
 
 
         return view('common.home.index')

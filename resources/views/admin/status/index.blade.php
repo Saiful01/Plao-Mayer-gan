@@ -51,6 +51,7 @@
                             <th> Name</th>
                             <th>Phone</th>
                             <th>Status</th>
+                            <th>Active</th>
                             <th>Action</th>
 
 
@@ -84,7 +85,19 @@
                                     @endif
 
                                 </td>
-                                <td><a href="/admin/status/delete/{{$res->id}}"><i class="fa fa-trash"></i> </a></td>
+                                <td>
+
+                                    @if($res->is_active==1)
+                                        <span class="badge badge-success">Yes</span>
+                                        <a href="/admin/status/inactive/{{$res->id}}" class="btn btn-sm btn-danger">Inactive</a>
+                                    @else
+                                        <span class="badge badge-warning">No</span>
+                                        <a href="/admin/status/active/{{$res->id}}" class="btn btn-sm btn-success">active</a>
+                                    @endif
+                                </td>
+                                <td><a href="/admin/status/delete/{{$res->id}}"><i class="fa fa-trash"></i> </a>
+
+                                </td>
 
 
                             </tr>

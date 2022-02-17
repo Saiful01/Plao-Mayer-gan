@@ -2,17 +2,20 @@
 
 @section('content')
     <style>
-        .panel-group p{
+        .panel-group p {
             color: black;
         }
-        .list-style{
+
+        .list-style {
             list-style-type: square;
         }
+
         .ts-intro-item {
             padding: 0px 0 0px;
         }
-        .ts-contact{
-            padding: 5px!important;
+
+        .ts-contact {
+            padding: 5px !important;
 
 
         }
@@ -20,7 +23,8 @@
 
     <!-- ts intro start -->
 
-    <section class="ts-intro-item " style="background-color: #A2D9ED; background-image: linear-gradient(to right, #A2D9ED , #F6F6F6);">
+    <section class="ts-intro-item "
+             style="background-color: #A2D9ED; background-image: linear-gradient(to right, #A2D9ED , #F6F6F6);">
         <div class="container">
             <div class="row">
                 <div class="desktop col-lg-12 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="300ms">
@@ -57,25 +61,32 @@
 
                         <div class="panel faq-list panel-default">
                             <ul class="list-style">
-                                <li class="line" > আপনার সন্তানকে আপনি যে বাংলা গান বা ছড়া শুনিয়ে ঘুম
+                                <li class="line"> আপনার সন্তানকে আপনি যে বাংলা গান বা ছড়া শুনিয়ে ঘুম
                                     পাড়ান, সেই মুহূর্তের ভিডিও পাঠান।
-                                    ভিডিও আপনার ফেসবুক প্রোফাইলে পাবলিক করে <span class="text-info">#GhumParaniGaan</span> ও
+                                    ভিডিও আপনার ফেসবুক প্রোফাইলে পাবলিক করে <span
+                                        class="text-info">#GhumParaniGaan</span> ও
                                     <span class="text-info">#ACIPure_Suji</span>
                                     হ্যাশট্যাগগুলো দিয়ে পাবলিশ করুন। ভিডিও পাবলিশের পর ভিডিও পোস্টের লিংকটি নিবন্ধন
-                                    ফর্মে নাম ও ফোন নম্বরসহ জমা দিতে হবে।</li>
-                                <li class="line" > আপনি যখন ছোট ছিলেন, আপনাকে যে গান বা ছড়া শুনিয়ে ঘুম
+                                    ফর্মে নাম ও ফোন নম্বরসহ জমা দিতে হবে।
+                                </li>
+                                <li class="line"> আপনি যখন ছোট ছিলেন, আপনাকে যে গান বা ছড়া শুনিয়ে ঘুম
                                     পাড়ানো হতো, সেই স্মৃতিও লিখে
-                                    <span class="text-info">#GhumParaniGaan</span> ও <span class="text-info">#ACIPure_Suji</span> হ্যাশট্যাগগুলো দিয়ে নাম ও ফোন নম্বরসহ
-                                    জমা দিতে হবে।</li>
+                                    <span class="text-info">#GhumParaniGaan</span> ও <span class="text-info">#ACIPure_Suji</span>
+                                    হ্যাশট্যাগগুলো দিয়ে নাম ও ফোন নম্বরসহ
+                                    জমা দিতে হবে।
+                                </li>
                                 <li> অংশগ্রহণকারীদের মধ্য থেকে লটারির মাধ্যমে নির্বাচিত ১০
                                     জন বিজয়ীর জন্য থাকবে আকর্ষণীয়
-                                    উপহার।</li>
+                                    উপহার।
+                                </li>
                                 <li> লেখা ও ভিডিও পাঠানোর শেষ সময় ২২ ফেব্রুয়ারি ২০২২।</li>
                                 <li> অংশগ্রহণকারীদের সংগৃহীত তথ্য প্রথম আলো ও এসিআই
-                                    যোগাযোগের জন্য ব্যবহার করতে পারবে।</li>
+                                    যোগাযোগের জন্য ব্যবহার করতে পারবে।
+                                </li>
                                 <li> এই আয়োজনসংক্রান্ত নিয়মাবলি প্রথম আলো সংরক্ষণ করে। সব
                                     ক্ষেত্রে প্রথম আলোর সিদ্ধান্তই
-                                    চূড়ান্ত।</li>
+                                    চূড়ান্ত।
+                                </li>
                             </ul>
 
 
@@ -155,7 +166,7 @@
         </div>
 
     </section>
-    <section class="ts-contact-form mobile" id="apply" >
+    <section class="ts-contact-form mobile" id="apply">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 mx-auto">
@@ -237,25 +248,32 @@
 
                         <div class="panel faq-list panel-default">
                             <ul>
-                                <li class="line" > আপনার সন্তানকে আপনি যে বাংলা গান বা ছড়া শুনিয়ে ঘুম
+                                <li class="line"> আপনার সন্তানকে আপনি যে বাংলা গান বা ছড়া শুনিয়ে ঘুম
                                     পাড়ান, সেই মুহূর্তের ভিডিও পাঠান।
-                                    ভিডিও আপনার ফেসবুক প্রোফাইলে পাবলিক করে <span class="text-info">#GhumParaniGaan</span> ও
+                                    ভিডিও আপনার ফেসবুক প্রোফাইলে পাবলিক করে <span
+                                        class="text-info">#GhumParaniGaan</span> ও
                                     <span class="text-info">#ACIPure_Suji</span>
                                     হ্যাশট্যাগগুলো দিয়ে পাবলিশ করুন। ভিডিও পাবলিশের পর ভিডিও পোস্টের লিংকটি নিবন্ধন
-                                    ফর্মে নাম ও ফোন নম্বরসহ জমা দিতে হবে।</li>
-                                <li class="line" > আপনি যখন ছোট ছিলেন, আপনাকে যে গান বা ছড়া শুনিয়ে ঘুম
+                                    ফর্মে নাম ও ফোন নম্বরসহ জমা দিতে হবে।
+                                </li>
+                                <li class="line"> আপনি যখন ছোট ছিলেন, আপনাকে যে গান বা ছড়া শুনিয়ে ঘুম
                                     পাড়ানো হতো, সেই স্মৃতিও লিখে
-                                    <span class="text-info">#GhumParaniGaan</span> ও <span class="text-info">#ACIPure_Suji</span> হ্যাশট্যাগগুলো দিয়ে নাম ও ফোন নম্বরসহ
-                                    জমা দিতে হবে।</li>
+                                    <span class="text-info">#GhumParaniGaan</span> ও <span class="text-info">#ACIPure_Suji</span>
+                                    হ্যাশট্যাগগুলো দিয়ে নাম ও ফোন নম্বরসহ
+                                    জমা দিতে হবে।
+                                </li>
                                 <li> অংশগ্রহণকারীদের মধ্য থেকে লটারির মাধ্যমে নির্বাচিত ১০
                                     জন বিজয়ীর জন্য থাকবে আকর্ষণীয়
-                                    উপহার।</li>
+                                    উপহার।
+                                </li>
                                 <li> লেখা ও ভিডিও পাঠানোর শেষ সময় ২২ ফেব্রুয়ারি ২০২২।</li>
                                 <li> অংশগ্রহণকারীদের সংগৃহীত তথ্য প্রথম আলো ও এসিআই
-                                    যোগাযোগের জন্য ব্যবহার করতে পারবে।</li>
+                                    যোগাযোগের জন্য ব্যবহার করতে পারবে।
+                                </li>
                                 <li> এই আয়োজনসংক্রান্ত নিয়মাবলি প্রথম আলো সংরক্ষণ করে। সব
                                     ক্ষেত্রে প্রথম আলোর সিদ্ধান্তই
-                                    চূড়ান্ত।</li>
+                                    চূড়ান্ত।
+                                </li>
                             </ul>
 
 
@@ -271,33 +289,34 @@
 
     </section>
 
-    {{--<section class="desktop">
+    <section class="desktop">
         <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <center>
-                        --}}{{--<img src="/images/desktop.jpg" alt="banner">--}}{{--
-                    </center>
-                </div>
-                <div class="col-md-9">
-                    <center>
 
-                       --}}{{-- <img src="/images/desktop.jpg" alt="banner">--}}{{--
-                    </center>
-                </div>
-            </div>
+            <center>
+                <a href="https://www.facebook.com/watch/?extid=CL-UNK-UNK-UNK-AN_GK0T-GK1C&v=681556196131202"
+                   target="_blank">
+                    <img src="/images/ad_banner_desktop.gif" alt="banner">
+                </a>
+
+
+            </center>
+
 
         </div>
     </section>
     <section class="mobile">
         <div class="container">
             <center>
-               --}}{{-- <img src="/images/mobile.jpg" alt="banner">--}}{{--
+                <a href="https://www.facebook.com/watch/?extid=CL-UNK-UNK-UNK-AN_GK0T-GK1C&v=681556196131202"
+                   target="_blank">
+                    <img src="/images/ad_banner_mobile.gif" alt="banner">
+                </a>
+
             </center>
         </div>
-    </section>--}}
+    </section>
 
-    <section class="ts-contact" >
+    <section class="ts-contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -318,7 +337,7 @@
                                                         {!! $res->fb_link !!}
                                                     </div>
                                                 @else
-                                                  {{--  <iframe src="http://www.facebook.com/video/embed?video_id=10152463995718183" frameborder="0" width="100%" height="100%">--}}
+                                                    {{--  <iframe src="http://www.facebook.com/video/embed?video_id=10152463995718183" frameborder="0" width="100%" height="100%">--}}
 
                                                     <iframe
                                                         src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fvoabangla%2Fposts%2F{{$res->fb_link}}&show_text=true&width=100%"
@@ -376,6 +395,11 @@
                                     <!-- post end-->
                                 </div>
                             @endforeach
+                            <div class="m-2">
+                                {{ $news->appends(Request::except('page'))->links("pagination::bootstrap-4") }}
+                            </div>
+
+
 
 
                         </div> <!-- row end -->

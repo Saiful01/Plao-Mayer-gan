@@ -127,4 +127,31 @@ class ApplicantsController extends Controller
 
     }
 
+    public function active($id)
+    {
+        try {
+            Applicants::where('id', $id)->update([
+                'is_active' => true
+            ]);
+            return back()->with('success', "Successfully Active");
+        } catch (\Exception $exception) {
+            return back()->with('failed', $exception->getMessage());
+        }
+
+    }
+
+    public function inactive($id)
+    {
+        try {
+
+            Applicants::where('id', $id)->update([
+                'is_active' => false
+            ]);
+            return back()->with('success', "Successfully inactive");
+        } catch (\Exception $exception) {
+            return back()->with('failed', $exception->getMessage());
+        }
+
+    }
+
 }

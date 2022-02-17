@@ -158,6 +158,8 @@ Route::group(['prefix' => "admin", 'middleware' => ['admin']], function () {
 
 
     Route::get('/status/delete/{id}', [ApplicantsController::class, 'destroy']);
+    Route::get('/status/active/{id}', [ApplicantsController::class, 'active']);
+    Route::get('/status/inactive/{id}', [ApplicantsController::class, 'inactive']);
 
 
 
