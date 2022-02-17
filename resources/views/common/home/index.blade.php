@@ -17,7 +17,13 @@
         .ts-contact {
             padding: 5px !important;
 
+        }
 
+        .page-item.active .page-link {
+            z-index: 2;
+            color: #fff;
+            background-color: #055CA7;
+            border-color: #055CA7;
         }
     </style>
 
@@ -295,7 +301,7 @@
             <center>
                 <a href="https://www.facebook.com/watch/?extid=CL-UNK-UNK-UNK-AN_GK0T-GK1C&v=681556196131202"
                    target="_blank">
-                    <img src="/images/ad_banner_desktop.gif" alt="banner">
+                    <img src="/images/ad_banner_desktop.gif" width="100%" alt="banner">
                 </a>
 
 
@@ -309,14 +315,14 @@
             <center>
                 <a href="https://www.facebook.com/watch/?extid=CL-UNK-UNK-UNK-AN_GK0T-GK1C&v=681556196131202"
                    target="_blank">
-                    <img src="/images/ad_banner_mobile.gif" alt="banner">
+                    <img src="/images/ad_banner_mobile.gif" width="100%" alt="banner">
                 </a>
 
             </center>
         </div>
     </section>
 
-    <section class="ts-contact">
+    <section class="ts-contact" style="background-color: #f8f8f8">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -340,7 +346,7 @@
                                                     {{--  <iframe src="http://www.facebook.com/video/embed?video_id=10152463995718183" frameborder="0" width="100%" height="100%">--}}
 
                                                     <iframe
-                                                        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fvoabangla%2Fposts%2F{{$res->fb_link}}&show_text=true&width=100%"
+                                                        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fvoabangla%2Fposts%2F100025139591552&show_text=true&width=100%"
                                                         width="100%" height="250px"
                                                         style="border:none;overflow:hidden"
                                                         scrolling="no" frameborder="0" allowfullscreen="true"
@@ -395,11 +401,9 @@
                                     <!-- post end-->
                                 </div>
                             @endforeach
-                            <div class="m-2">
+                            <div class="m-3">
                                 {{ $news->appends(Request::except('page'))->links("pagination::bootstrap-4") }}
                             </div>
-
-
 
 
                         </div> <!-- row end -->
