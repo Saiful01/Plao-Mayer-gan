@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
 
 class ApplicantsController extends Controller
@@ -113,13 +114,14 @@ class ApplicantsController extends Controller
         Auth::guard('applicant')->logout();
         return Redirect::to("/applicant/login");
     }
+
     public function destroy($id)
     {
 
         try {
             Applicants::where('id', $id)->delete();
             return back()->with("success", "Successfully Deleted");
-        }catch (\Exception $exception){
+        } catch (\Exception $exception) {
 
             return back()->with("failed", $exception->getMessage());
 
@@ -153,5 +155,47 @@ class ApplicantsController extends Controller
         }
 
     }
+  public function edit($id)
+    {
+
+
+           $result= Applicants::where('id', $id)->first();
+            return view('admin.status.edit')->with('result', $result);
+
+
+    }
+
+    public function update(Request $request)
+    {
+
+        if (str_contains($request['fb_link'], "iframe",)) {
+
+            $flink = $request['fb_link'];
+        } else {
+
+            $flink = getFbLink($request['fb_link']);
+        }
+
+
+        $data = [
+            'name' => $request['name'],
+            'phone' => $request['phone'],
+            'fb_link' => $flink,
+            'status' => $request['status'],
+
+        ];
+
+
+        try {
+            Applicants::where('id', $request['id'])->update($data);
+            return back()->with('success', "Successfully Updated");
+        } catch (\Exception $exception) {
+            return back()->with('failed', $exception->getMessage());
+
+
+        }
+
+    }
+
 
 }

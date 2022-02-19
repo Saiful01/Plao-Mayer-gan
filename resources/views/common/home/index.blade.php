@@ -346,7 +346,7 @@
                                                     {{--  <iframe src="http://www.facebook.com/video/embed?video_id=10152463995718183" frameborder="0" width="100%" height="100%">--}}
 
                                                     <iframe
-                                                        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fvoabangla%2Fposts%2F100025139591552&show_text=true&width=100%"
+                                                        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fvoabangla%2Fposts%2F{{$res->fb_link}}&show_text=true&width=100%"
                                                         width="100%" height="250px"
                                                         style="border:none;overflow:hidden"
                                                         scrolling="no" frameborder="0" allowfullscreen="true"
@@ -370,8 +370,8 @@
                                                    </span>
                                             </div>
                                             @if($res->fb_link == null)
-                                                <div class="post-footer">
-                                                    <a class="btn-link" data-toggle="modal" data-target="#{{$res->id}}">
+                                                <div class="post-footer " style="cursor: pointer" >
+                                                    <a class="btn-link  " data-toggle="modal" data-target="#{{$res->id}}">
                                                         Continue <i class="icon icon-arrow-right"></i></a>
 
                                                 </div>

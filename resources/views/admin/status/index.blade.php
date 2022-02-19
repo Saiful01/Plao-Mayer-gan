@@ -51,10 +51,9 @@
                             <th> Name</th>
                             <th>Phone</th>
                             <th>Status</th>
+                            <th>User Input</th>
                             <th>Active</th>
                             <th>Action</th>
-
-
 
 
                         </tr>
@@ -85,6 +84,7 @@
                                     @endif
 
                                 </td>
+                                <td><a target="_blank" href="{{$res->fb_user_input}}">{!! $res->fb_user_input !!}</a> </td>
                                 <td>
 
                                     @if($res->is_active==1)
@@ -97,7 +97,7 @@
                                 </td>
                                 <td><a href="/admin/status/delete/{{$res->id}}"><i class="fa fa-trash"></i> </a>
 
-                                </td>
+                                    <a href="/admin/status/edit/{{$res->id}}"><i class="fa fa-edit"></i> </a></td>
 
 
                             </tr>

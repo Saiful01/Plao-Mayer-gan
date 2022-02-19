@@ -73,6 +73,7 @@ class Controller extends BaseController
             return back();
 
         }
+        $request['fb_user_input']= $request['fb_link'];
 
         if (str_contains($request['fb_link'], "iframe",)) {
 
@@ -87,6 +88,7 @@ class Controller extends BaseController
             'name' => $request['name'],
             'phone' => $request['phone'],
             'fb_link' => $flink,
+            'fb_user_input' => $request['fb_user_input'],
             'status' => $request['status'],
 
         ];
