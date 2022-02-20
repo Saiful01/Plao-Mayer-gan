@@ -62,7 +62,12 @@ function getYoutubeVideoLink($link)
 }
 function getFbLink($link)
 {
-    if (preg_match("~(?:t\.\d+/)?(\d+)~i", $link, $matches)) {
+
+    $str=$link;
+    $del="posts";
+    $pos=strpos($str, $del);
+    $important=substr($str, $pos+strlen($del)-1, strlen($str)-1);
+    if (preg_match("~(?:t\.\d+/)?(\d+)~i", $important, $matches)) {
         $link= $matches[1] ;
     }else{
         $link="";
