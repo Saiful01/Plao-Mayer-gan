@@ -76,12 +76,17 @@ class AdminController extends Controller
             ->with('mcq', $mcq);
     }
 
-    public function applicantsShow()
+    public function applicantsShow(Request $request)
     {
+        $winner=$request['winner'];
 
 
         $numbers = 25;
         $query = Applicants::orderBy('created_at', 'DESC');
+        if ($winner != null){
+            $query->where('is_short_listed', true);
+
+        }
 
         $data = $query->paginate($numbers);
         $counter_start = 1;

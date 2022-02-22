@@ -38,6 +38,10 @@ class Controller extends BaseController
             return Redirect::to("/campaign-over");
         }*/
         //  return District::all();
+
+
+
+
         $news = Applicants::where('is_active', true)->orderby("created_at", "DESC")->paginate(10);
 
 
@@ -73,6 +77,12 @@ class Controller extends BaseController
             return back();
 
         }
+        if(\Carbon\Carbon::now() > "2022-02-22 23:59:59") {
+            Session::flash('error', ' @if(\Carbon\Carbon::now() > "2022-02-22 23:59:59")।');
+            return back();
+
+        }
+
         $request['fb_user_input']= $request['fb_link'];
 
         if (str_contains($request['fb_link'], "iframe",)) {

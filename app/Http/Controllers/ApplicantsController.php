@@ -155,6 +155,17 @@ class ApplicantsController extends Controller
         }
 
     }
+
+    public function winnerStatusUpdate($id, $status)
+    {
+
+        Applicants::where('id', $id)->update([
+            'is_short_listed' => $status
+        ]);
+
+        return back()->with("success", "Updated");
+
+    }
   public function edit($id)
     {
 

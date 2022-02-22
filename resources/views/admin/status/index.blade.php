@@ -42,6 +42,7 @@
                 <div class="card-body">
 
                     <h4 class="card-title">Status Applicants</h4>
+                    <a class=" m-2 btn btn-sm btn-success" href="/admin/status/applicants?winner=1">Winner List</a>
 
                     <table id="datatable-buttonss" class="table table-striped table-bordered dt-responsive nowrap"
                            style="border-collapse: collapse; border-spacing: 0; width: 100%;">
@@ -52,6 +53,7 @@
                             <th>Phone</th>
                             <th>Status</th>
                             <th>User Input</th>
+                            <th>Winner</th>
                             <th>Active</th>
                             <th>Action</th>
 
@@ -85,6 +87,23 @@
 
                                 </td>
                                 <td><a target="_blank" href="{{$res->fb_user_input}}">{!! $res->fb_user_input !!}</a> </td>
+
+                                <td>
+
+                                    @if($res->is_short_listed==1)
+                                        <span class="badge badge-success">Yes</span>
+                                        <br>
+                                        <a href="/admin/winner/status-update/{{$res->id}}/0"
+                                           class="btn btn-sm btn-danger">Change</a>
+                                    @else
+                                        <span class="badge badge-warning">No</span>
+                                        <br>
+                                        <a href="/admin/winner/status-update/{{$res->id}}/1"
+                                           class="btn btn-sm btn-primary">Winner</a>
+                                    @endif
+
+
+                                </td>
                                 <td>
 
                                     @if($res->is_active==1)
