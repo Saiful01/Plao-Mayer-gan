@@ -53,7 +53,7 @@
     <!-- ts intro end-->
 
     @if(\Carbon\Carbon::now() > "2022-02-22 23:59:59")
-        <section>
+       {{-- <section>
             <div class="container">
                 <h2 class="section-title text-center">
                     বিশেষ নোটিশ
@@ -67,7 +67,7 @@
             </div>
 
 
-        </section>
+        </section>--}}
     @else
         <section class="ts-contact-form desktop " id="apply">
             <div class="container">
@@ -347,6 +347,104 @@
         </div>
     </section>
 
+    @if(\Carbon\Carbon::now() > "2022-02-28 11:59:59")
+        <section class="ts-contact" style="background-color: #f8f8f8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="section-title text-center">
+                            নির্বাচিত বিজয়ীদের অভিনন্দন!
+                        </h2>
+                        <div class="elementor-widget-container">
+                            <div class="row ">
+                                @foreach($winners as $res)
+                                    <div class="col-lg-6 fadeInUp mt-5">
+                                        <div
+                                            class="card p-2" {{--style="border: 1px solid; border-color: #9f9f9f"--}}>
+                                            <div class="post-media post-image">
+
+                                                @if($res->fb_link != null)
+                                                    @if (str_contains( $res->fb_link,  'iframe'))
+                                                        <div style="width: 540px!important;">
+                                                            {!! $res->fb_link !!}
+                                                        </div>
+                                                    @else
+                                                        {{--  <iframe src="http://www.facebook.com/video/embed?video_id=10152463995718183" frameborder="0" width="100%" height="100%">--}}
+
+                                                        <iframe
+                                                            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fvoabangla%2Fposts%2F{{$res->fb_link}}&show_text=true&width=100%"
+                                                            width="100%" height="250px"
+                                                            style="border:none;overflow:hidden"
+                                                            scrolling="no" frameborder="0" allowfullscreen="true"
+                                                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+
+                                                        </iframe>
+                                                    @endif
+                                                @else
+                                                    <p style="height: 200px">{{ Str::limit($res->status, 300) }}</p>
+                                                @endif
+                                            </div>
+                                            <div class="post-body">
+                                                <div class="post-meta">
+                                                                  <span class="post-author">
+                                                   <i class="icon icon-user"></i>
+                                                   <a href=""> {{$res->name}}</a>
+                                                   </span>
+                                                    <span class="post-meta-date">
+                                                    <i class="icon icon-calendar"></i>
+                                                      {{getDateFormat($res->created_at)}}
+                                                   </span>
+                                                </div>
+                                                @if($res->fb_link == null)
+                                                    <div class="post-footer " style="cursor: pointer">
+                                                        <a class="btn-link  " data-toggle="modal"
+                                                           data-target="#{{$res->id}}">
+                                                            Continue <i class="icon icon-arrow-right"></i></a>
+
+                                                    </div>
+
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="{{$res->id}}" tabindex="-1"
+                                                         role="dialog"
+                                                         aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog" role="document">
+                                                            <div class="modal-content">
+
+                                                                <div class="modal-body">
+                                                                    {!! $res->status !!}
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn-sm btn-secondary"
+                                                                            data-dismiss="modal">Close
+                                                                    </button>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                @endif
+                                            </div>
+                                            <!-- post-body end -->
+                                        </div>
+                                        <!-- post end-->
+                                    </div>
+                                @endforeach
+                                {{--<div class="m-3">
+                                    {{ $news->appends(Request::except('page'))->links("pagination::bootstrap-4") }}
+                                </div>--}}
+
+
+                            </div> <!-- row end -->
+                        </div>
+                    </div><!-- col end-->
+
+                </div>
+
+            </div>
+
+        </section>
+    @else
+
     <section class="ts-contact" style="background-color: #f8f8f8">
         <div class="container">
             <div class="row">
@@ -442,6 +540,8 @@
         </div>
 
     </section>
+    @endif
+
 
 
 

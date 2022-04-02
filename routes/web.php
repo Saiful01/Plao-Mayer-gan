@@ -99,7 +99,7 @@ Route::group(['prefix' => "admin"], function () {
 Route::group(['prefix' => "admin", 'middleware' => ['admin']], function () {
     Route::get('/dashboard', [AdminController::class, 'dashboard']);
     Route::get('/status/applicants', [AdminController::class, 'applicantsShow']);
-    Route::get('/winner/status-update/{id}/{status}', [AdminController::class, 'winnerStatusUpdate']);
+    Route::get('/winner/status-update/{id}/{status}', [ApplicantsController::class, 'winnerStatusUpdate']);
 
 
 

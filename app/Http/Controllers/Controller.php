@@ -43,10 +43,13 @@ class Controller extends BaseController
 
 
         $news = Applicants::where('is_active', true)->orderby("created_at", "DESC")->paginate(10);
+        $winners = Applicants::where('is_short_listed', true)->orderby("serial", "DESC")->get();
+
 
 
         return view('common.home.index')
             ->with('news', $news)
+            ->with('winners', $winners)
             ->with("thumbnail", "/images/facebook_image.jpg")
             ->with("fb_title", "মায়ের ভাষায় ঘুমপাড়ানি গান ")
             ->with("fb_sub_title", "মায়ের ভাষায় ঘুমপাড়ানি গানে আপনার অনুভূতি প্রকাশ করুন আর পুরস্কার জিতুন ");
